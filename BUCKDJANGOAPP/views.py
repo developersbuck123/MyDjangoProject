@@ -10,7 +10,7 @@ def hi(request):
 
 
 def index(request):
-    return render(request, 'BUCKDJANGOAPP/Index.html')
+    return render(request, 'BUCKDJANGOAPP/index.html')
 
 
 def student_list(request):
