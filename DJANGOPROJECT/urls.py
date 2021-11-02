@@ -16,7 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from BUCKDJANGOAPP import views
+
 urlpatterns = [
+    path('', views.index, name='Index'),
+    path('List', views.student_list, name='student_list'),
+    path('new/', views.create_student, name='create_student'),
+    path('update/<int:id>', views.update_student, name='update_student'),
+    path('delete/<int:id>', views.delete_student, name='delete_student'),
     path('admin/', admin.site.urls),
-    path('', include('BUCKDJANGOAPP.urls'))
+    path('BUCKDJANGOAPP/', include('BUCKDJANGOAPP.urls'))
 ]
