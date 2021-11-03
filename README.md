@@ -1,4 +1,4 @@
-# Getting Started #
+# Getting Started #1
 
 These steps will get this sample Django application running for you using DigitalOcean.
 This application is the standard [Django Polls Tutorial](https://docs.djangoproject.com/en/3.1/intro/tutorial01/) with an added page at `/`.
