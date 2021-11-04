@@ -72,17 +72,16 @@ WSGI_APPLICATION = 'DJANGOPROJECT.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-...
 DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'StudentDB',
-        'CLIENT': {
-            'host': 'localhost:27017'
+        'default': {
+            'ENGINE': 'djongo',
+            'NAME': 'StudentDB',
+            'USER': 'doadmin',
+            'PASSWORD': 'Ew460A93NQ518',
+            'HOST': 'db-mongodb-nyc3-23293-2a33e10d.mongo.ondigitalocean.com',
+            'PORT': '27017',
         }
     }
-}
-...
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
