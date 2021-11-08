@@ -74,11 +74,12 @@ WSGI_APPLICATION = 'DJANGOPROJECT.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'StudentDB',
-        'CLIENT': {
-            'host': 'localhost:27017'
-        }
+        'USER': 'doadmin',
+        'PASSWORD': 'geg39T5sKBCVaDqZ',
+        'HOST': 'db-postgresql-nyc3-76245-do-user-10116441-0.b.db.ondigitalocean.com',
+        'PORT': '25060',
     }
 }
 
