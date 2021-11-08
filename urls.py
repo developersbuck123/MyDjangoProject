@@ -25,5 +25,7 @@ urlpatterns = [
     path('update/<int:id>', views.update_student, name='update_student'),
     path('delete/<int:id>', views.delete_student, name='delete_student'),
     path('admin/', admin.site.urls),
-    path('BUCKDJANGOAPP/', include('BUCKDJANGOAPP.urls'))
+    path('BUCKDJANGOAPP/', include('BUCKDJANGOAPP.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
+    # path('', TemplateView.as_view(template_name='BUCKDJANGOAPP/index.html'), name='Index'),
 ]
